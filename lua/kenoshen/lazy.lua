@@ -11,23 +11,4 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
-	{
-		"folke/tokyonight.nvim",
-		name = "tokyonight",
-		config = function()
-			vim.cmd("colorscheme tokyonight")
-		end,
-	},
-	"nvim-lua/plenary.nvim",
-	"nvim-telescope/telescope.nvim",
-	"folke/which-key.nvim",
-	"folke/neodev.nvim",
-	{
-		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate",
-	},
-	"mbbill/undotree",
-	"nvim-tree/nvim-tree.lua",
-	"nvim-tree/nvim-web-devicons",
-})
+require("lazy").setup("kenoshen.plugins")
