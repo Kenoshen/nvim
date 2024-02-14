@@ -17,12 +17,16 @@ vim.keymap.set("n", "<leader>qa", "<cmd>qa<cr>")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- get rid of the 's' command
+vim.keymap.set("n", "s", function() print('ah ah ah, didnt say the magic word') end)
+
 -- set to 2 spaces
 vim.o.expandtab=true
 vim.o.smartindent=true
 vim.o.tabstop=2
 vim.o.shiftwidth=2
 
+-- AU Group (no idea what that is, but it is apparently important)
 local augroup = vim.api.nvim_create_augroup
 local MyGroup = augroup("MyGroup", {})
 local autocmd = vim.api.nvim_create_autocmd
