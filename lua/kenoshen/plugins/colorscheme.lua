@@ -1,11 +1,13 @@
 return {
+  "rktjmp/lush.nvim",
   {
-    "folke/tokyonight.nvim",
+    "kenoshen/intellij-dark.nvim",
+    name = "intellij-dark",
+    dir = "~/Documents/intellij-dark.nvim",
     config = function()
-      vim.cmd("colorscheme tokyonight")
+      vim.cmd("colorscheme intellij-dark")
     end,
   },
-  "rktjmp/lush.nvim",
   {
     "doums/darcula",
   },
@@ -20,5 +22,8 @@ return {
     dependencies = {
       "rktjmp/lush.nvim",
     },
+  },
+  {
+    "folke/tokyonight.nvim",
   },
 }

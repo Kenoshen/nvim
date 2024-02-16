@@ -2,6 +2,8 @@
 
 vim.g.mapleader = " "
 
+vim.keymap.set("n", "<leader>tt", "<cmd>colorscheme intellij-dark<cr>")
+
 -- open the file explorer (this is the default until nvim-tree overrides this to use tree instead of default file explorer)
 vim.keymap.set("n", "<leader>e", "<cmd>Ex<cr>")
 
