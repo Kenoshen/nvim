@@ -4,6 +4,9 @@ return {
     "kenoshen/intellij-dark.nvim",
     name = "intellij-dark",
     dir = "~/Documents/intellij-dark.nvim",
+    dependencies = {
+      "rktjmp/lush.nvim",
+    },
     config = function()
       vim.cmd("colorscheme intellij-dark")
     end,
