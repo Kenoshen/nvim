@@ -52,6 +52,23 @@ return {
               },
             })
           end,
+          ["gopls"] = function()
+            local lspconfig = require("lspconfig")
+            lspconfig.gopls.setup({
+              cmd = {"gopls"},
+              filetypes = {"go", "gomod", "gowork", "gotmpl"},
+              settings = {
+                gopls = {
+                  completeUnimported = true,
+                  usePlaceholders = true,
+                  analyses = {
+                    unusedparams = true,
+                  },
+                  semanticTokens = true,
+                },
+              },
+            })
+          end,
         }
       })
 
