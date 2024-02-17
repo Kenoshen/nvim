@@ -9,6 +9,7 @@ return {
           "typescript",
           "javascript",
           "lua",
+          "graphql",
         },
         sync_install = false,
         highlight = {

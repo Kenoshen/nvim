@@ -69,6 +69,13 @@ return {
               },
             })
           end,
+          ["graphql"] = function()
+            local lspconfig = require("lspconfig")
+            lspconfig.graphql.setup({
+              cmd = {"graphql-lsp"},
+              filetypes = {"graphql"},
+            })
+          end,
         }
       })
 
