@@ -20,7 +20,10 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- get rid of the 's' command
-vim.keymap.set("n", "s", function() print('ah ah ah, didnt say the magic word') end)
+vim.keymap.set("n", "s", "<nop>")
+
+-- allow quick find and replace of currently highlighted text
+vim.keymap.set("v", "<leader>tr", "\"hy:%s/<C-r>h//gc<left><left><left>")
 
 -- set to 2 spaces
 vim.o.expandtab=true
