@@ -10,6 +10,9 @@ return {
           "javascript",
           "lua",
           "graphql",
+          "html",
+          "css",
+          "templ",
         },
         sync_install = false,
         highlight = {
