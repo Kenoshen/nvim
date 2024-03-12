@@ -8,8 +8,8 @@ vim.keymap.set("n", "<leader>tt", "<cmd>colorscheme intellij-dark<cr>")
 vim.keymap.set("n", "<leader>e", "<cmd>Ex<cr>")
 
 -- save the file with leader instead of :
-vim.keymap.set("n", "<leader>ww", "<cmd>w<cr>")
-vim.keymap.set("n", "<leader>s", "<cmd>w<cr>")
+vim.keymap.set("n", "<leader>ww", "<cmd>wa<cr>")
+vim.keymap.set("n", "<leader>s", "<cmd>wa<cr>")
 vim.keymap.set("n", "<leader>wq", "<cmd>wq<cr>")
 vim.keymap.set("n", "<leader>wa", "<cmd>wqa<cr>")
 vim.keymap.set("n", "<leader>qq", "<cmd>q<cr>")
