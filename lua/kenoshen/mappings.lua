@@ -54,3 +54,11 @@ autocmd("LspAttach", {
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
   end,
 })
+
+-- autosave
+vim.api.nvim_create_autocmd({
+  "FocusLost",
+  "VimSuspend", -- before nvim enters the suspend state
+}, {
+    command = "silent! wa",
+  })

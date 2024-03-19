@@ -6,4 +6,3 @@ vim.cmd("set number")
 
 require("kenoshen.mappings")
 require("kenoshen.lazy")
-
