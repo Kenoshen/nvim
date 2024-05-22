@@ -10,21 +10,22 @@ return {
         },
         formatter_by_ft = {
           go = {
+            -- formatters.shell({
+            --   cmd = { "gofmt" },
+            -- }),
             formatters.shell({
               cmd = { "goimports-reviser", "-rm-unused", "-set-alias", "-format", "%" },
               tempfile = function()
                 return vim.fn.expand("%") .. '.formatter-temp'
               end
             }),
-            formatters.shell({
-              cmd = { "gofmt" },
-            }),
           },
         },
         fallback_formatter = {
           formatters.remove_trailing_whitespace,
           formatters.remove_trailing_newlines,
-          formatters.prettierd,
+          -- prettierd throws errors all the time
+          -- formatters.prettierd,
         },
       })
     end,
