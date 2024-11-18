@@ -25,7 +25,7 @@ return {
           "eslint",
           "graphql",
           "html",
-          "htmx-lsp",
+          "htmx_lsp",
           "haxe_language_server",
           "jsonls",
           "tsserver",
@@ -75,6 +75,10 @@ return {
               cmd = {"graphql-lsp"},
               filetypes = {"graphql"},
             })
+          end,
+          ["htmx-lsp"] = function()
+            local lspconfig = require("lspconfig")
+            lspconfig.htmx.setup{}
           end,
         }
       })
