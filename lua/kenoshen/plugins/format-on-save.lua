@@ -20,6 +20,14 @@ return {
               end
             }),
           },
+          ts = {
+            formatters.shell({
+              cmd = { "pwd" },
+              tempfile = function()
+                return vim.fn.expand("%") .. '.formatter-temp'
+              end
+            }),
+          },
         },
         fallback_formatter = {
           formatters.remove_trailing_whitespace,
