@@ -25,7 +25,7 @@ return {
           "eslint",
           "graphql",
           "html",
-          "htmx",
+          "htmx-lsp",
           "haxe_language_server",
           "jsonls",
           "tsserver",
@@ -132,4 +132,3 @@ return {
     end,
   },
 }
-
