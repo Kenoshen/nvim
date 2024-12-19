@@ -27,7 +27,6 @@ return {
           "html",
           "haxe_language_server",
           "jsonls",
-          "tsserver",
           "lua_ls",
           "marksman",
           "sqls",
